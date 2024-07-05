@@ -1,0 +1,6 @@
+{
+    "class_names": [
+        "pump 0%", "pump 5%", "pump 10%", "pump 15%", "pump 20%", "pump 25%", "pump 30%", "pump 35%", "pump 40%", "pump 45%", "pump 50%",
+        "pump 55%", "pump 60%", "pump 65%", "pump 70%", "pump 75%", "pump 80%", "pump 85%", "pump 90%", "pump 95%", "pump 100%"
+    ]
+}

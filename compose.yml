@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: pump-classification
+    image: pump-classification
+    ports:
+      - "8787:8787"
+    stdin_open: true
+    tty: true
+    volumes:
+      - pump-classification-models-vol:/app/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [ gpu ]
+
+volumes:
+  pump-classification-models-vol:
+    name: pump-classification-models-vol
